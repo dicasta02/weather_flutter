@@ -1,17 +1,17 @@
 import 'dart:convert';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:intl/intl.dart';
+import 'package:weather_app/data/entities/current_weather.dart';
+import 'package:weather_app/data/entities/current_weather_data.dart';
+import 'package:weather_app/data/entities/seven_day_weather.dart';
+import 'package:weather_app/data/entities/seven_day_weather_data.dart';
 import 'package:weather_app/data/entities/today_weather.dart';
 import 'package:weather_app/data/entities/today_weather_data.dart';
 import 'package:weather_app/data/entities/weather.dart';
 import 'package:weather_app/data/models/weather_model.dart';
-import 'package:weather_app/utils/current_weather.dart';
-import 'package:weather_app/utils/current_weather_data.dart';
-import 'package:weather_app/utils/seven_day_weather.dart';
-import 'package:weather_app/utils/seven_day_weather_data.dart';
 
 import '../../util/fixure_reader.dart';
-import '../util/fixure_reader.dart';
 
 void main() {
   DateTime date = DateTime.now();
@@ -128,7 +128,6 @@ void main() {
   test(
     'should be a subclass of Weather entity',
     () async {
-      // assert
       expect(tWeatherModel, isA<Weather>());
     },
   );
@@ -137,13 +136,9 @@ void main() {
     test(
       'should return a valid model from JSON',
       () async {
-        // arrange
         final Map<String, dynamic> jsonMap =
             json.decode(fixture('weather.json'));
-        // act
         final result = WeatherModel.fromJson(jsonMap);
-        // assert
-
         expect(result, equals(tWeatherModel));
       },
     );

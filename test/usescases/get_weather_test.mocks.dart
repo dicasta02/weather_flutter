@@ -2,50 +2,31 @@
 // in weather/test/features/weather/domain/usecases/get_weather_test.dart.
 // Do not manually edit this file.
 
-import 'dart:async' as _i5;
+import 'dart:async' as _i4;
 
-import 'package:dartz/dartz.dart' as _i3;
+import 'package:dartz/dartz.dart' as _i2;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:weather_app/utils/failures.dart' as _i6;
-import 'package:weather_app/utils/get_lat_long.dart' as _i9;
-import 'package:weather_app/usescase/weather_params.dart' as _i8;
-import 'package:weather_app/data/repository/weather_repository.dart' as _i2;
-import 'package:weather_app/utils/lat_long.dart' as _i10;
-import 'package:weather_app/data/entities/weather.dart' as _i7;
-import 'package:weather_app/usescase/get_weather.dart' as _i4;
+import 'package:weather_app/utils/failures.dart' as _i5;
 
-class _FakeWeatherRepository_0 extends _i1.Fake
-    implements _i2.WeatherRepository {}
+import 'package:weather_app/data/repository/weather_repository.dart' as _i3;
+import 'package:weather_app/utils/lat_long.dart' as _i7;
+import 'package:weather_app/data/entities/weather.dart' as _i6;
 
-class _FakeEither_1<L, R> extends _i1.Fake implements _i3.Either<L, R> {}
+class _FakeEither_0<L, R> extends _i1.Fake implements _i2.Either<L, R> {}
 
-class MockGetWeather extends _i1.Mock implements _i4.GetWeather {
-  MockGetWeather() {
+/// A class which mocks [WeatherRepository].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockWeatherRepository extends _i1.Mock implements _i3.WeatherRepository {
+  MockWeatherRepository() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i2.WeatherRepository get repository =>
-      (super.noSuchMethod(Invocation.getter(#repository),
-          returnValue: _FakeWeatherRepository_0()) as _i2.WeatherRepository);
-  @override
-  _i5.Future<_i3.Either<_i6.Failure, _i7.Weather>> call(
-          _i8.WeatherParams? params) =>
-      (super.noSuchMethod(Invocation.method(#call, [params]),
-              returnValue: Future<_i3.Either<_i6.Failure, _i7.Weather>>.value(
-                  _FakeEither_1<_i6.Failure, _i7.Weather>()))
-          as _i5.Future<_i3.Either<_i6.Failure, _i7.Weather>>);
-}
-
-class MockGetLatLongImpl extends _i1.Mock implements _i9.GetLatLongImpl {
-  MockGetLatLongImpl() {
-    _i1.throwOnMissingStub(this);
-  }
-
-  @override
-  _i5.Future<_i3.Either<_i6.Failure, _i10.LatLong>> getLatLong() =>
-      (super.noSuchMethod(Invocation.method(#getLatLong, []),
-              returnValue: Future<_i3.Either<_i6.Failure, _i10.LatLong>>.value(
-                  _FakeEither_1<_i6.Failure, _i10.LatLong>()))
-          as _i5.Future<_i3.Either<_i6.Failure, _i10.LatLong>>);
+  _i4.Future<_i2.Either<_i5.Failure, _i6.Weather>> getWeather(
+          _i7.LatLong? latLong) =>
+      (super.noSuchMethod(Invocation.method(#getWeather, [latLong]),
+              returnValue: Future<_i2.Either<_i5.Failure, _i6.Weather>>.value(
+                  _FakeEither_0<_i5.Failure, _i6.Weather>()))
+          as _i4.Future<_i2.Either<_i5.Failure, _i6.Weather>>);
 }
