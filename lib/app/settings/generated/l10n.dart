@@ -53,7 +53,7 @@ class S {
   /// `CashPak el Salvador`
   String get appName {
     return Intl.message(
-      'CashPak el Salvador',
+      'Weather App',
       name: 'appName',
       desc: '',
       args: [],
@@ -215,6 +215,51 @@ class S {
     return Intl.message(
       'Ya tengo cuenta',
       name: 'iHaveAAcount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get allwind {
+    return Intl.message(
+      'Viento',
+      name: 'allwind',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get allhumidity {
+    return Intl.message(
+      'Humedad',
+      name: 'allhumidity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get allrain {
+    return Intl.message(
+      'Lluvia',
+      name: 'allrain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get allDays {
+    return Intl.message(
+      'Clima de los siguientes 7 días',
+      name: 'allDays',
+      desc: '',
+      args: [],
+    );
+  }
+
+  String get allToday {
+    return Intl.message(
+      'Clima de hoy',
+      name: 'allToday',
       desc: '',
       args: [],
     );

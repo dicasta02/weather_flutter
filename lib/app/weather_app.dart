@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:weather_app/app/settings/appication_colors.dart';
 import 'package:weather_app/app/settings/generated/l10n.dart';
-import 'package:weather_app/view/forecast_view.dart';
+import 'package:weather_app/view/weather_page.dart';
 
 class WeatherApp extends StatelessWidget {
   WeatherApp({Key? key}) : super(key: key) {
@@ -20,6 +20,8 @@ class WeatherApp extends StatelessWidget {
     ApplicationColors().disabledButtonColor = const Color(0xFFDDDDDD);
     ApplicationColors().neutralGrayColor = const Color(0xFFA8A8A8);
     ApplicationColors().neutralBlackColor = const Color(0xFF4B4B4B);
+    ApplicationColors().blueInfoBackground = Colors.blue[500];
+    ApplicationColors().shadow = Colors.blue[200];
   }
 
 //  final FirebaseAnalytics analytics = FirebaseAnalytics();
@@ -57,7 +59,7 @@ class WeatherApp extends StatelessWidget {
       ],
       debugShowCheckedModeBanner: false,
       supportedLocales: S.delegate.supportedLocales,
-      home: const ForecastView(),
+      home: WeatherPage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
           cupertinoOverrideTheme: const CupertinoThemeData(

@@ -3,9 +3,11 @@ import 'package:weather_app/app/settings/app_settings.dart';
 import 'package:weather_app/app/settings/application.dart';
 import 'package:weather_app/app/weather_app.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:weather_app/injection_container.dart' as di;
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await di.init();
   var appSettings = AppSettings(
     baseURL: 'https://api.openweathermap.org/data/2.5/',
   );

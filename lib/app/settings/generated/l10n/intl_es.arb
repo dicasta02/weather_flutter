@@ -8,6 +8,11 @@
     "allNext": "Siguiente",
     "allStart": "Comenzar",
     "allFinish": "Finalizar",
-    "allContinue": "Continuar"
-    
+    "allContinue": "Continuar",
+    "generalError": "Lo sentimos, ha ocurrido un error.",
+    "allwind": "Viento",
+    "allhumidity": "Humedad",
+    "allrain": "Lluvia",
+    "allDays"  : "Clima de los siguientes 7 días",
+    "allToday" : "Clima de hoy"
 }

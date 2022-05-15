@@ -15,30 +15,8 @@ class ApplicationColors {
   Color? disabledButtonColor;
   Color? neutralGrayColor;
   Color? neutralBlackColor;
-  Color? greenBonusColor;
-  Color? grayBonusColor;
-  Color? pointsColor;
-  Color? wellnessHourColor;
-  Color? walletMoneyColor;
-  Color? errorColor;
-  Color? dividerColor;
-  Color? backgroundPointsValueIcon;
-  Color? backgroundMoneyValueIcon;
-  Color? moneyColor;
-  Color? yellowBackground;
-  Color? whiteBackground;
   Color? blueInfoBackground;
-  Color? errorBackground;
-  Color? challengeBackGround;
-  Color? greenWaveSelectedBackGround;
-  Color? blueExperiencesTooltipBackground;
-  late Color blueExperiencesTooltipBorder;
-  Color? blueExperiencesTooltipIcon;
-  Color? sleepTimeColor;
-  Color? notificationItemBackGround;
-  Color? clanHourColor;
-  Color? expiredBonusColor;
-  Color? certificatedExperienceColor;
+  Color? shadow;
 
   factory ApplicationColors() {
     _singleton = ApplicationColors._();
