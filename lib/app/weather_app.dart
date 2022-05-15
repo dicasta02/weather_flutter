@@ -24,8 +24,6 @@ class WeatherApp extends StatelessWidget {
     ApplicationColors().shadow = Colors.blue[200];
   }
 
-//  final FirebaseAnalytics analytics = FirebaseAnalytics();
-
   static const MaterialColor _primarySwatch = MaterialColor(
     _primarySwatchValue,
     <int, Color>{
