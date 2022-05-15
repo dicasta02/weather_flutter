@@ -9,4 +9,4 @@ Test of concept in Flutter, on weather application.
 ![Image_text](https://github.com/dicasta02/weather_flutter/blob/main/assets/photo_2022-05-15_17-50-32.jpg)
 ![Image_text](https://github.com/dicasta02/weather_flutter/blob/main/assets/photo_2022-05-15_17-50-33.jpg)
 ![Image_text](https://github.com/dicasta02/weather_flutter/blob/main/assets/photo_2022-05-15_17-50-34.jpg)
-![Image_text](https://github.com/dicasta02/weather_flutter/blob/main/assets/photo_2022-05-15_17-50-27.jpg)
+
