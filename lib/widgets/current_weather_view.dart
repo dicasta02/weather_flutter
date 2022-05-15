@@ -18,7 +18,6 @@ class CurrentWeatherView extends StatelessWidget {
           boxShadow: [
             BoxShadow(
               color: ApplicationColors().shadow ?? Colors.blueAccent,
-              offset: Offset(0, -10),
             )
           ],
           color: ApplicationColors().blueInfoBackground,

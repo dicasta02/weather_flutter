@@ -10,6 +10,8 @@ class CurrentMainData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int output = ((currentWeather.current) - 273.15).round();
+
     return Column(
       children: [
         SizedBox(
@@ -21,19 +23,14 @@ class CurrentMainData extends StatelessWidget {
           height: getProportionateScreenHeight(250),
           fit: BoxFit.fill,
         ),
-        Positioned(
-          bottom: 0,
-          right: 0,
-          left: 0,
-          child: Center(
-              child: Column(
-            children: [
-              text(120, currentWeather.current.toString()),
-              text(25, currentWeather.name),
-              text(18, currentWeather.day),
-            ],
-          )),
-        )
+        Center(
+            child: Column(
+          children: [
+            text(120, output.toString() + '°'),
+            text(25, currentWeather.name),
+            text(18, currentWeather.day),
+          ],
+        )),
       ],
     );
   }

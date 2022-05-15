@@ -10,6 +10,8 @@ class SevenDayExtraData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int output = ((sevenDayWeather.max) - 273.15).round();
+    int output2 = ((sevenDayWeather.min) - 273.15).round();
     return Container(
       margin: EdgeInsets.only(
           bottom: getProportionateScreenWidth(10),
@@ -51,7 +53,7 @@ class SevenDayExtraData extends StatelessWidget {
           Row(
             children: [
               Text(
-                "+" + sevenDayWeather.max.toString() + "\u00B0",
+                "+" + output.toString() + "\u00B0",
                 style: TextStyle(
                     color: Colors.black,
                     decoration: TextDecoration.none,
@@ -61,7 +63,7 @@ class SevenDayExtraData extends StatelessWidget {
                 width: getProportionateScreenWidth(5),
               ),
               Text(
-                "+" + sevenDayWeather.min.toString() + "\u00B0",
+                "+" + output2.toString() + "\u00B0",
                 style: TextStyle(
                     decoration: TextDecoration.none,
                     fontSize: getProportionateScreenHeight(20),

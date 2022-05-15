@@ -9,6 +9,7 @@ class TodayExtraData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int output = ((todayWeather.current) - 273.15).round();
     return Container(
       padding: EdgeInsets.all(getProportionateScreenWidth(15)),
       decoration: BoxDecoration(
@@ -18,7 +19,7 @@ class TodayExtraData extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            todayWeather.current.toString() + "\u00B0",
+            output.toString() + "\u00B0",
             style: TextStyle(
                 color: Colors.black,
                 decoration: TextDecoration.none,
