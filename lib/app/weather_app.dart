@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:weather_app/app/settings/appication_colors.dart';
 import 'package:weather_app/app/settings/generated/l10n.dart';
+import 'package:weather_app/view/home_page.dart';
 import 'package:weather_app/view/weather_page.dart';
 
 class WeatherApp extends StatelessWidget {
@@ -57,7 +58,7 @@ class WeatherApp extends StatelessWidget {
       ],
       debugShowCheckedModeBanner: false,
       supportedLocales: S.delegate.supportedLocales,
-      home: WeatherPage(),
+      home: HomePage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
           cupertinoOverrideTheme: const CupertinoThemeData(

@@ -80,6 +80,16 @@ class S {
     );
   }
 
+  /// `Title`
+  String get title {
+    return Intl.message(
+      'Listado de Ciudades',
+      name: 'title',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Atrás`
   String get allBack {
     return Intl.message(
